@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 import rclpy                 # core ROS2 client python library
 from rclpy.node import Node  # To manipulate ROS Nodes
+import math
 
 def main():
     rclpy.init()     # Initialize ROS2 client
