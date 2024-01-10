@@ -109,7 +109,7 @@ def scan_callback( scanMsg ):
 
     # Definition de la command
     if obstacle :
-        velo.angular.z = 0.2
+        velo.angular.z = 0.9
     else :
         velo.linear.x = 0.4
 
