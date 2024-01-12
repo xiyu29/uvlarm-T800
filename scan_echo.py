@@ -14,7 +14,7 @@ from geometry_msgs.msg import Twist
 rosNode= None
 previous_state = "null"
 avance_distance = 0
-secure_distance_max = 0.5
+secure_distance_max = 2.0
 secure_distence_min = 0.1
 
 def scan_callback( scanMsg ):
@@ -29,8 +29,9 @@ def scan_callback( scanMsg ):
     angle= scanMsg.angle_min
     print('scan received')
     # print("previous status:", previous_state)
-    # obstacle_left = False
-    # obstacle_right = False
+    obstacle_left = False
+    obstacle_right = False
+    obstacle_close = False
     obstacles= []
     velo = Twist()
 
@@ -53,15 +54,15 @@ def scan_callback( scanMsg ):
             # print("y:")
             # rosNode.get_logger().info( f"scan:\n{aPoint.y}" )
 
-            # if secure_distence_min < aPoint[0] and aPoint[0] < secure_distance_max and secure_distence_min < aPoint[1] and aPoint[1] < secure_distance_max :
-            #     # print("obstacle a gauche")
-            #     cmd_debug_points.append( aPoint )
-            #     obstacle = True
+            if secure_distence_min < aPoint[0] and aPoint[0] < secure_distance_max and secure_distence_min < aPoint[1] and aPoint[1] < secure_distance_max :
+                # print("obstacle a gauche")
+                cmd_debug_points.append( aPoint )
+                obstacle_left = True
 
-            # elif secure_distence_min < aPoint[0] and aPoint[0] < secure_distance_max and -secure_distance_max < aPoint[1] and aPoint[1] < -secure_distence_min :
-            #     # print("obstacle a droit")
-            #     cmd_debug_points.append( aPoint )
-            #     obstacle = True 
+            elif secure_distence_min < aPoint[0] and aPoint[0] < secure_distance_max and -secure_distance_max < aPoint[1] and aPoint[1] < -secure_distence_min :
+                # print("obstacle a droit")
+                cmd_debug_points.append( aPoint )
+                obstacle_right = True 
 
             if secure_distence_min < aPoint[0] and aPoint[0] < secure_distance_max and -secure_distance_max < aPoint[1] and aPoint[1] < secure_distance_max : 
                 cmd_debug_points.append( aPoint )
@@ -69,6 +70,14 @@ def scan_callback( scanMsg ):
     
         angle+= scanMsg.angle_increment
 
+    if obstacle_left and not obstacle_right :
+        velo.angular.z = -0.2 
+    elif not obstacle_left and obstacle_right :
+        velo.angular.z = 0.2
+    elif obstacle_left and obstacle_right :
+        velo.angular.z = 0.5
+    
+    velo.linear.x = 0.5
     # Definition de la cmmand :
     # if obstacle_left and not obstacle_right :  
     #     print("obstacle left")  
@@ -108,10 +117,9 @@ def scan_callback( scanMsg ):
     #         avance_distance = 0
 
     # Definition de la command
-    if obstacle :
-        velo.angular.z = 0.9
-    else :
-        velo.linear.x = 0.4
+    # if obstacle :
+    #     velo.angular.z = 0.5
+    # velo.linear.x = 0.5
 
 
     # sampleList = [[round(p[0],2),round(p[1],2),0] for p in cmd_debug_points]
