@@ -83,3 +83,62 @@
 # cap.release()
 # cv2.destroyAllWindows()
 
+#Extraction de régions dans une image binarisée
+import cv2
+import numpy as np
+import matplotlib.pyplot as plt
+from skimage.measure import label, regionprops
+import math
+
+image = cv2.imread('./b2.jpeg')
+b,g,r = cv2.split(image) 
+
+
+# passage en niveau de gris
+gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY) #sinon HSV
+cv2.imshow("gray",gray)
+cv2.waitKey(0)
+###### extration des régions avec la lib skimage
+# Binarisation de l'image
+#ret, thresh = cv2.threshold(gray, 127, 255, cv2.THRESH_BINARY)
+thresh=np.uint8((r>60)&(g>70)&(b<5))*255
+kernel = np.ones((5,5),np.uint8)
+thresh = cv2.dilate(thresh,kernel,iterations = 20)
+print(thresh.shape)
+
+fig, ax = plt.subplots()
+ax.imshow(thresh, cmap=plt.cm.gray)
+cv2.imwrite("imageSeuillee.jpg",thresh)
+cv2.waitKey(0)
+
+# extraction des régions et des propriétés des régions
+label_img = label(thresh)
+regions = regionprops(label_img)
+print(regions)
+
+
+# affichage des régions et des boites englobantes
+fig, ax = plt.subplots()
+ax.imshow(thresh, cmap=plt.cm.gray)
+
+for props in regions:
+    y0, x0 = props.centroid
+    orientation = props.orientation
+    x1 = x0 + math.cos(orientation) * 0.5 * props.minor_axis_length
+    y1 = y0 - math.sin(orientation) * 0.5 * props.minor_axis_length
+    x2 = x0 - math.sin(orientation) * 0.5 * props.major_axis_length
+    y2 = y0 - math.cos(orientation) * 0.5 * props.major_axis_length
+
+    ax.plot((x0, x1), (y0, y1), '-r', linewidth=2.5)
+    ax.plot((x0, x2), (y0, y2), '-r', linewidth=2.5)
+    ax.plot(x0, y0, '.g', markersize=15)
+
+    minr, minc, maxr, maxc = props.bbox
+    bx = (minc, maxc, maxc, minc, minc)
+    by = (minr, minr, maxr, maxr, minr)
+    ax.plot(bx, by, '-b', linewidth=2.5)
+
+ax.axis((0, 600, 600, 0))
+plt.show()
+
+cv2.waitKey(0)
