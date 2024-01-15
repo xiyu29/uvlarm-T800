@@ -38,7 +38,7 @@ class Realsense(Node):
         
         self.bottleDetectPublisher = self.create_publisher( String, 'bottle_detect', 10)
         
-        self.bottle = String
+        self.bottle = String()
         self.canPublishbottle = False
         
         self.lo=np.array([55, 100, 50])
@@ -128,7 +128,7 @@ class Realsense(Node):
         if len(elements) > 0:
             c=max(elements, key=cv2.contourArea)
             ((x, y), rayon)=cv2.minEnclosingCircle(c)
-            if rayon>10 and y > 200:
+            if rayon>35 and y > 200:
                 cv2.circle(image2, (int(x), int(y)), int(rayon), self.color_info, 2)
                 cv2.circle(frame, (int(x), int(y)), 5, self.color_info, 10)
                 cv2.line(frame, (int(x), int(y)), (int(x)+150, int(y)), self.color_info, 2)
