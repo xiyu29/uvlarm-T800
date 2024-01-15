@@ -38,7 +38,7 @@ class Realsense(Node):
         
         self.bottleDetectPublisher = self.create_publisher( String, 'bottle_detect', 10)
         
-        self.bottle = String()
+        self.bottle = String
         self.canPublishbottle = False
         
         self.lo=np.array([55, 100, 50])

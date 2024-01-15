@@ -12,8 +12,8 @@ import time
 from geometry_msgs.msg import Twist 
 
 rosNode= None
-previous_state = "null"
-avance_distance = 0
+# previous_state = "null"
+# avance_distance = 0
 secure_distance_max = 0.4
 secure_distence_min = 0.05
 
@@ -33,7 +33,7 @@ class Context :
         # print("previous status:", previous_state)
         obstacle_left = False
         obstacle_right = False
-        obstacle_close = False
+        # obstacle_close = False
         obstacles= []
         velo = Twist()
 
