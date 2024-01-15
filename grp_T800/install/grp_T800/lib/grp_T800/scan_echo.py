@@ -11,7 +11,7 @@ import time
 # Message to publish:
 from geometry_msgs.msg import Twist 
 
-# rosNode= None
+rosNode= None
 # previous_state = "null"
 # avance_distance = 0
 secure_distance_max = 0.4
@@ -20,7 +20,7 @@ secure_distence_min = 0.05
 class Context :
 
     def scan_callback(self,  scanMsg ):
-        # global rosNode
+        global rosNode
         # global previous_state
         # global avance_distance
         obstacle = False
@@ -142,17 +142,17 @@ class Context :
     def nodeInitialiser(self): 
 
         rclpy.init()
-        # rosNode= Node('scan_interpreter')
+        rosNode= Node('scan_interpreter')
         myNode= Node('move_node')
         self.velocity_publisher = myNode.create_publisher(Twist, '/multi/cmd_nav', 10) #vrai robot
         # self.velocity_publisher = myNode.create_publisher(Twist, 'cmd_vel', 10) # simulation
-        # rosNode.create_subscription( LaserScan, 'scan', self.scan_callback, 10)
+        rosNode.create_subscription( LaserScan, 'scan', self.scan_callback, 10)
         # cloud_publisher = rosNode.create_publisher(pc2.PointCloud2, 'laser_pointcloud', 10)
 
 
-        # while True :
-        #     rclpy.spin_once( rosNode )
-        # scanInterpret.destroy_node()
+        while True :
+            rclpy.spin_once( rosNode )
+        scanInterpret.destroy_node()
         rclpy.shutdown()
 
 if __name__ == '__main__':

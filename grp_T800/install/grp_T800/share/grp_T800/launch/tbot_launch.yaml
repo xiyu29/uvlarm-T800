@@ -1,10 +1,8 @@
 launch:
   - include: 
       file: "$(find-pkg-share tbot_node)/launch/minimal_launch.yaml"
-  - node:
-      pkg: "grp_T800"
-      exec: "scan_echo.py"
-      name: "move_node"
+  - executable: 
+      cmd: gnome-terminal --tab -e "python3 /home/bot/mb6-space/uvlarm-T800/grp_T800/scripts/scan_echo.py"
 
 
   
