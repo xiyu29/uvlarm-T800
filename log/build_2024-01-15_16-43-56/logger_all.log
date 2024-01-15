@@ -1,0 +1,268 @@
+[1.259s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[1.259s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f75aa0ef670>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f75aa3ae2c0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f75aa3ae2c0>>)
+[1.316s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.316s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.316s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.316s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.316s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[1.316s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.316s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/bot/mb6-space/uvlarm-T800'
+[1.317s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.317s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[1.317s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[1.317s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[1.317s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[1.317s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[1.317s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[1.317s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[1.317s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[1.328s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[1.328s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[1.328s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[1.328s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[1.328s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[1.329s] Level 1:colcon.colcon_core.package_identification:_identify(T-800) by extensions ['ignore', 'ignore_ament_install']
+[1.329s] Level 1:colcon.colcon_core.package_identification:_identify(T-800) by extension 'ignore'
+[1.329s] Level 1:colcon.colcon_core.package_identification:_identify(T-800) by extension 'ignore_ament_install'
+[1.329s] Level 1:colcon.colcon_core.package_identification:_identify(T-800) by extensions ['colcon_pkg']
+[1.329s] Level 1:colcon.colcon_core.package_identification:_identify(T-800) by extension 'colcon_pkg'
+[1.329s] Level 1:colcon.colcon_core.package_identification:_identify(T-800) by extensions ['colcon_meta']
+[1.329s] Level 1:colcon.colcon_core.package_identification:_identify(T-800) by extension 'colcon_meta'
+[1.329s] Level 1:colcon.colcon_core.package_identification:_identify(T-800) by extensions ['ros']
+[1.329s] Level 1:colcon.colcon_core.package_identification:_identify(T-800) by extension 'ros'
+[1.331s] DEBUG:colcon.colcon_core.package_identification:Package 'T-800' with type 'ros.ament_cmake' and name 'T-800'
+[1.331s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[1.332s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[1.332s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[1.332s] Level 1:colcon.colcon_core.package_identification:_identify(grp_T800) by extensions ['ignore', 'ignore_ament_install']
+[1.332s] Level 1:colcon.colcon_core.package_identification:_identify(grp_T800) by extension 'ignore'
+[1.332s] Level 1:colcon.colcon_core.package_identification:_identify(grp_T800) by extension 'ignore_ament_install'
+[1.332s] Level 1:colcon.colcon_core.package_identification:_identify(grp_T800) by extensions ['colcon_pkg']
+[1.332s] Level 1:colcon.colcon_core.package_identification:_identify(grp_T800) by extension 'colcon_pkg'
+[1.332s] Level 1:colcon.colcon_core.package_identification:_identify(grp_T800) by extensions ['colcon_meta']
+[1.332s] Level 1:colcon.colcon_core.package_identification:_identify(grp_T800) by extension 'colcon_meta'
+[1.332s] Level 1:colcon.colcon_core.package_identification:_identify(grp_T800) by extensions ['ros']
+[1.332s] Level 1:colcon.colcon_core.package_identification:_identify(grp_T800) by extension 'ros'
+[1.333s] DEBUG:colcon.colcon_core.package_identification:Package 'grp_T800' with type 'ros.ament_cmake' and name 'grp_T800'
+[1.333s] Level 1:colcon.colcon_core.package_identification:_identify(images) by extensions ['ignore', 'ignore_ament_install']
+[1.333s] Level 1:colcon.colcon_core.package_identification:_identify(images) by extension 'ignore'
+[1.333s] Level 1:colcon.colcon_core.package_identification:_identify(images) by extension 'ignore_ament_install'
+[1.333s] Level 1:colcon.colcon_core.package_identification:_identify(images) by extensions ['colcon_pkg']
+[1.333s] Level 1:colcon.colcon_core.package_identification:_identify(images) by extension 'colcon_pkg'
+[1.333s] Level 1:colcon.colcon_core.package_identification:_identify(images) by extensions ['colcon_meta']
+[1.333s] Level 1:colcon.colcon_core.package_identification:_identify(images) by extension 'colcon_meta'
+[1.333s] Level 1:colcon.colcon_core.package_identification:_identify(images) by extensions ['ros']
+[1.333s] Level 1:colcon.colcon_core.package_identification:_identify(images) by extension 'ros'
+[1.334s] Level 1:colcon.colcon_core.package_identification:_identify(images) by extensions ['cmake', 'python']
+[1.334s] Level 1:colcon.colcon_core.package_identification:_identify(images) by extension 'cmake'
+[1.334s] Level 1:colcon.colcon_core.package_identification:_identify(images) by extension 'python'
+[1.334s] Level 1:colcon.colcon_core.package_identification:_identify(images) by extensions ['python_setup_py']
+[1.334s] Level 1:colcon.colcon_core.package_identification:_identify(images) by extension 'python_setup_py'
+[1.334s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[1.334s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[1.334s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[1.334s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[1.334s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[1.334s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[1.334s] Level 1:colcon.colcon_core.package_identification:_identify(tuto_kickoff) by extensions ['ignore', 'ignore_ament_install']
+[1.334s] Level 1:colcon.colcon_core.package_identification:_identify(tuto_kickoff) by extension 'ignore'
+[1.334s] Level 1:colcon.colcon_core.package_identification:_identify(tuto_kickoff) by extension 'ignore_ament_install'
+[1.334s] Level 1:colcon.colcon_core.package_identification:_identify(tuto_kickoff) by extensions ['colcon_pkg']
+[1.335s] Level 1:colcon.colcon_core.package_identification:_identify(tuto_kickoff) by extension 'colcon_pkg'
+[1.335s] Level 1:colcon.colcon_core.package_identification:_identify(tuto_kickoff) by extensions ['colcon_meta']
+[1.335s] Level 1:colcon.colcon_core.package_identification:_identify(tuto_kickoff) by extension 'colcon_meta'
+[1.335s] Level 1:colcon.colcon_core.package_identification:_identify(tuto_kickoff) by extensions ['ros']
+[1.335s] Level 1:colcon.colcon_core.package_identification:_identify(tuto_kickoff) by extension 'ros'
+[1.335s] DEBUG:colcon.colcon_core.package_identification:Package 'tuto_kickoff' with type 'ros.ament_cmake' and name 'tuto_kickoff'
+[1.336s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.336s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[1.336s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[1.336s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[1.336s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[1.460s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[1.460s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[1.499s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 11 installed packages in /home/bot/mb6-space/install
+[1.524s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 363 installed packages in /opt/ros/iron
+[1.526s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[1.621s] Level 5:colcon.colcon_core.verb:set package 'T-800' build argument 'cmake_args' from command line to 'None'
+[1.621s] Level 5:colcon.colcon_core.verb:set package 'T-800' build argument 'cmake_target' from command line to 'None'
+[1.621s] Level 5:colcon.colcon_core.verb:set package 'T-800' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.621s] Level 5:colcon.colcon_core.verb:set package 'T-800' build argument 'cmake_clean_cache' from command line to 'False'
+[1.621s] Level 5:colcon.colcon_core.verb:set package 'T-800' build argument 'cmake_clean_first' from command line to 'False'
+[1.621s] Level 5:colcon.colcon_core.verb:set package 'T-800' build argument 'cmake_force_configure' from command line to 'False'
+[1.622s] Level 5:colcon.colcon_core.verb:set package 'T-800' build argument 'ament_cmake_args' from command line to 'None'
+[1.622s] Level 5:colcon.colcon_core.verb:set package 'T-800' build argument 'catkin_cmake_args' from command line to 'None'
+[1.622s] Level 5:colcon.colcon_core.verb:set package 'T-800' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.622s] DEBUG:colcon.colcon_core.verb:Building package 'T-800' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/bot/mb6-space/uvlarm-T800/build/T-800', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/bot/mb6-space/uvlarm-T800/install/T-800', 'merge_install': False, 'path': '/home/bot/mb6-space/uvlarm-T800/T-800', 'symlink_install': False, 'test_result_base': None}
+[1.641s] Level 5:colcon.colcon_core.verb:set package 'grp_T800' build argument 'cmake_args' from command line to 'None'
+[1.641s] Level 5:colcon.colcon_core.verb:set package 'grp_T800' build argument 'cmake_target' from command line to 'None'
+[1.641s] Level 5:colcon.colcon_core.verb:set package 'grp_T800' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.641s] Level 5:colcon.colcon_core.verb:set package 'grp_T800' build argument 'cmake_clean_cache' from command line to 'False'
+[1.641s] Level 5:colcon.colcon_core.verb:set package 'grp_T800' build argument 'cmake_clean_first' from command line to 'False'
+[1.641s] Level 5:colcon.colcon_core.verb:set package 'grp_T800' build argument 'cmake_force_configure' from command line to 'False'
+[1.641s] Level 5:colcon.colcon_core.verb:set package 'grp_T800' build argument 'ament_cmake_args' from command line to 'None'
+[1.641s] Level 5:colcon.colcon_core.verb:set package 'grp_T800' build argument 'catkin_cmake_args' from command line to 'None'
+[1.641s] Level 5:colcon.colcon_core.verb:set package 'grp_T800' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.641s] DEBUG:colcon.colcon_core.verb:Building package 'grp_T800' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/bot/mb6-space/uvlarm-T800/build/grp_T800', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/bot/mb6-space/uvlarm-T800/install/grp_T800', 'merge_install': False, 'path': '/home/bot/mb6-space/uvlarm-T800/grp_T800', 'symlink_install': False, 'test_result_base': None}
+[1.661s] Level 5:colcon.colcon_core.verb:set package 'tuto_kickoff' build argument 'cmake_args' from command line to 'None'
+[1.661s] Level 5:colcon.colcon_core.verb:set package 'tuto_kickoff' build argument 'cmake_target' from command line to 'None'
+[1.661s] Level 5:colcon.colcon_core.verb:set package 'tuto_kickoff' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.661s] Level 5:colcon.colcon_core.verb:set package 'tuto_kickoff' build argument 'cmake_clean_cache' from command line to 'False'
+[1.661s] Level 5:colcon.colcon_core.verb:set package 'tuto_kickoff' build argument 'cmake_clean_first' from command line to 'False'
+[1.661s] Level 5:colcon.colcon_core.verb:set package 'tuto_kickoff' build argument 'cmake_force_configure' from command line to 'False'
+[1.661s] Level 5:colcon.colcon_core.verb:set package 'tuto_kickoff' build argument 'ament_cmake_args' from command line to 'None'
+[1.661s] Level 5:colcon.colcon_core.verb:set package 'tuto_kickoff' build argument 'catkin_cmake_args' from command line to 'None'
+[1.661s] Level 5:colcon.colcon_core.verb:set package 'tuto_kickoff' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.661s] DEBUG:colcon.colcon_core.verb:Building package 'tuto_kickoff' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/bot/mb6-space/uvlarm-T800/build/tuto_kickoff', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/bot/mb6-space/uvlarm-T800/install/tuto_kickoff', 'merge_install': False, 'path': '/home/bot/mb6-space/uvlarm-T800/tuto_kickoff', 'symlink_install': False, 'test_result_base': None}
+[1.679s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[1.699s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[1.699s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/bot/mb6-space/uvlarm-T800/T-800' with build type 'ament_cmake'
+[1.699s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/bot/mb6-space/uvlarm-T800/T-800'
+[1.721s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[1.722s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.722s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.784s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/bot/mb6-space/uvlarm-T800/grp_T800' with build type 'ament_cmake'
+[1.784s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/bot/mb6-space/uvlarm-T800/grp_T800'
+[1.806s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.806s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.883s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/bot/mb6-space/uvlarm-T800/tuto_kickoff' with build type 'ament_cmake'
+[1.884s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/bot/mb6-space/uvlarm-T800/tuto_kickoff'
+[1.905s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.905s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.973s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/bot/mb6-space/uvlarm-T800/build/T-800': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron /usr/bin/cmake --build /home/bot/mb6-space/uvlarm-T800/build/T-800 -- -j8 -l8
+[1.977s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/bot/mb6-space/uvlarm-T800/build/grp_T800': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron /usr/bin/cmake --build /home/bot/mb6-space/uvlarm-T800/build/grp_T800 -- -j8 -l8
+[1.980s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/bot/mb6-space/uvlarm-T800/build/tuto_kickoff': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron /usr/bin/cmake --build /home/bot/mb6-space/uvlarm-T800/build/tuto_kickoff -- -j8 -l8
+[2.015s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/bot/mb6-space/uvlarm-T800/build/T-800' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron /usr/bin/cmake --build /home/bot/mb6-space/uvlarm-T800/build/T-800 -- -j8 -l8
+[2.016s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/bot/mb6-space/uvlarm-T800/build/grp_T800' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron /usr/bin/cmake --build /home/bot/mb6-space/uvlarm-T800/build/grp_T800 -- -j8 -l8
+[2.021s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/bot/mb6-space/uvlarm-T800/build/tuto_kickoff' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron /usr/bin/cmake --build /home/bot/mb6-space/uvlarm-T800/build/tuto_kickoff -- -j8 -l8
+[2.053s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/bot/mb6-space/uvlarm-T800/build/T-800': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron /usr/bin/cmake --install /home/bot/mb6-space/uvlarm-T800/build/T-800
+[2.055s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/bot/mb6-space/uvlarm-T800/build/grp_T800': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron /usr/bin/cmake --install /home/bot/mb6-space/uvlarm-T800/build/grp_T800
+[2.057s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/bot/mb6-space/uvlarm-T800/build/tuto_kickoff': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron /usr/bin/cmake --install /home/bot/mb6-space/uvlarm-T800/build/tuto_kickoff
+[2.066s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(T-800)
+[2.071s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/bot/mb6-space/uvlarm-T800/build/T-800' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron /usr/bin/cmake --install /home/bot/mb6-space/uvlarm-T800/build/T-800
+[2.094s] Level 1:colcon.colcon_core.environment:checking '/home/bot/mb6-space/uvlarm-T800/install/T-800' for CMake module files
+[2.094s] Level 1:colcon.colcon_core.environment:checking '/home/bot/mb6-space/uvlarm-T800/install/T-800' for CMake config files
+[2.094s] Level 1:colcon.colcon_core.shell:create_environment_hook('T-800', 'cmake_prefix_path')
+[2.114s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bot/mb6-space/uvlarm-T800/install/T-800/share/T-800/hook/cmake_prefix_path.ps1'
+[2.115s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bot/mb6-space/uvlarm-T800/install/T-800/share/T-800/hook/cmake_prefix_path.dsv'
+[2.115s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bot/mb6-space/uvlarm-T800/install/T-800/share/T-800/hook/cmake_prefix_path.sh'
+[2.116s] Level 1:colcon.colcon_core.environment:checking '/home/bot/mb6-space/uvlarm-T800/install/T-800/bin'
+[2.116s] Level 1:colcon.colcon_core.environment:checking '/home/bot/mb6-space/uvlarm-T800/install/T-800/lib/pkgconfig/T-800.pc'
+[2.116s] Level 1:colcon.colcon_core.environment:checking '/home/bot/mb6-space/uvlarm-T800/install/T-800/lib/python3.10/site-packages'
+[2.116s] Level 1:colcon.colcon_core.environment:checking '/home/bot/mb6-space/uvlarm-T800/install/T-800/bin'
+[2.137s] INFO:colcon.colcon_core.shell:Creating package script '/home/bot/mb6-space/uvlarm-T800/install/T-800/share/T-800/package.ps1'
+[2.137s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/bot/mb6-space/uvlarm-T800/install/T-800/share/T-800/package.dsv'
+[2.138s] INFO:colcon.colcon_core.shell:Creating package script '/home/bot/mb6-space/uvlarm-T800/install/T-800/share/T-800/package.sh'
+[2.139s] INFO:colcon.colcon_core.shell:Creating package script '/home/bot/mb6-space/uvlarm-T800/install/T-800/share/T-800/package.bash'
+[2.139s] INFO:colcon.colcon_core.shell:Creating package script '/home/bot/mb6-space/uvlarm-T800/install/T-800/share/T-800/package.zsh'
+[2.140s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/bot/mb6-space/uvlarm-T800/install/T-800/share/colcon-core/packages/T-800)
+[2.142s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(grp_T800)
+[2.142s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/bot/mb6-space/uvlarm-T800/build/grp_T800' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron /usr/bin/cmake --install /home/bot/mb6-space/uvlarm-T800/build/grp_T800
+[2.164s] Level 1:colcon.colcon_core.environment:checking '/home/bot/mb6-space/uvlarm-T800/install/grp_T800' for CMake module files
+[2.164s] Level 1:colcon.colcon_core.environment:checking '/home/bot/mb6-space/uvlarm-T800/install/grp_T800' for CMake config files
+[2.164s] Level 1:colcon.colcon_core.shell:create_environment_hook('grp_T800', 'cmake_prefix_path')
+[2.184s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bot/mb6-space/uvlarm-T800/install/grp_T800/share/grp_T800/hook/cmake_prefix_path.ps1'
+[2.184s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bot/mb6-space/uvlarm-T800/install/grp_T800/share/grp_T800/hook/cmake_prefix_path.dsv'
+[2.185s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bot/mb6-space/uvlarm-T800/install/grp_T800/share/grp_T800/hook/cmake_prefix_path.sh'
+[2.185s] Level 1:colcon.colcon_core.environment:checking '/home/bot/mb6-space/uvlarm-T800/install/grp_T800/lib'
+[2.185s] Level 1:colcon.colcon_core.environment:checking '/home/bot/mb6-space/uvlarm-T800/install/grp_T800/bin'
+[2.186s] Level 1:colcon.colcon_core.environment:checking '/home/bot/mb6-space/uvlarm-T800/install/grp_T800/lib/pkgconfig/grp_T800.pc'
+[2.186s] Level 1:colcon.colcon_core.environment:checking '/home/bot/mb6-space/uvlarm-T800/install/grp_T800/lib/python3.10/site-packages'
+[2.186s] Level 1:colcon.colcon_core.environment:checking '/home/bot/mb6-space/uvlarm-T800/install/grp_T800/bin'
+[2.206s] INFO:colcon.colcon_core.shell:Creating package script '/home/bot/mb6-space/uvlarm-T800/install/grp_T800/share/grp_T800/package.ps1'
+[2.207s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/bot/mb6-space/uvlarm-T800/install/grp_T800/share/grp_T800/package.dsv'
+[2.207s] INFO:colcon.colcon_core.shell:Creating package script '/home/bot/mb6-space/uvlarm-T800/install/grp_T800/share/grp_T800/package.sh'
+[2.208s] INFO:colcon.colcon_core.shell:Creating package script '/home/bot/mb6-space/uvlarm-T800/install/grp_T800/share/grp_T800/package.bash'
+[2.208s] INFO:colcon.colcon_core.shell:Creating package script '/home/bot/mb6-space/uvlarm-T800/install/grp_T800/share/grp_T800/package.zsh'
+[2.208s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/bot/mb6-space/uvlarm-T800/install/grp_T800/share/colcon-core/packages/grp_T800)
+[2.209s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tuto_kickoff)
+[2.210s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/bot/mb6-space/uvlarm-T800/build/tuto_kickoff' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron /usr/bin/cmake --install /home/bot/mb6-space/uvlarm-T800/build/tuto_kickoff
+[2.232s] Level 1:colcon.colcon_core.environment:checking '/home/bot/mb6-space/uvlarm-T800/install/tuto_kickoff' for CMake module files
+[2.233s] Level 1:colcon.colcon_core.environment:checking '/home/bot/mb6-space/uvlarm-T800/install/tuto_kickoff' for CMake config files
+[2.233s] Level 1:colcon.colcon_core.shell:create_environment_hook('tuto_kickoff', 'cmake_prefix_path')
+[2.254s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bot/mb6-space/uvlarm-T800/install/tuto_kickoff/share/tuto_kickoff/hook/cmake_prefix_path.ps1'
+[2.254s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bot/mb6-space/uvlarm-T800/install/tuto_kickoff/share/tuto_kickoff/hook/cmake_prefix_path.dsv'
+[2.255s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bot/mb6-space/uvlarm-T800/install/tuto_kickoff/share/tuto_kickoff/hook/cmake_prefix_path.sh'
+[2.255s] Level 1:colcon.colcon_core.environment:checking '/home/bot/mb6-space/uvlarm-T800/install/tuto_kickoff/lib'
+[2.256s] Level 1:colcon.colcon_core.environment:checking '/home/bot/mb6-space/uvlarm-T800/install/tuto_kickoff/bin'
+[2.256s] Level 1:colcon.colcon_core.environment:checking '/home/bot/mb6-space/uvlarm-T800/install/tuto_kickoff/lib/pkgconfig/tuto_kickoff.pc'
+[2.256s] Level 1:colcon.colcon_core.environment:checking '/home/bot/mb6-space/uvlarm-T800/install/tuto_kickoff/lib/python3.10/site-packages'
+[2.256s] Level 1:colcon.colcon_core.environment:checking '/home/bot/mb6-space/uvlarm-T800/install/tuto_kickoff/bin'
+[2.277s] INFO:colcon.colcon_core.shell:Creating package script '/home/bot/mb6-space/uvlarm-T800/install/tuto_kickoff/share/tuto_kickoff/package.ps1'
+[2.277s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/bot/mb6-space/uvlarm-T800/install/tuto_kickoff/share/tuto_kickoff/package.dsv'
+[2.277s] INFO:colcon.colcon_core.shell:Creating package script '/home/bot/mb6-space/uvlarm-T800/install/tuto_kickoff/share/tuto_kickoff/package.sh'
+[2.278s] INFO:colcon.colcon_core.shell:Creating package script '/home/bot/mb6-space/uvlarm-T800/install/tuto_kickoff/share/tuto_kickoff/package.bash'
+[2.278s] INFO:colcon.colcon_core.shell:Creating package script '/home/bot/mb6-space/uvlarm-T800/install/tuto_kickoff/share/tuto_kickoff/package.zsh'
+[2.279s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/bot/mb6-space/uvlarm-T800/install/tuto_kickoff/share/colcon-core/packages/tuto_kickoff)
+[2.303s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(T-800)
+[2.323s] Level 1:colcon.colcon_core.environment:checking '/home/bot/mb6-space/uvlarm-T800/install/T-800' for CMake module files
+[2.323s] Level 1:colcon.colcon_core.environment:checking '/home/bot/mb6-space/uvlarm-T800/install/T-800' for CMake config files
+[2.324s] Level 1:colcon.colcon_core.shell:create_environment_hook('T-800', 'cmake_prefix_path')
+[2.344s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bot/mb6-space/uvlarm-T800/install/T-800/share/T-800/hook/cmake_prefix_path.ps1'
+[2.345s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bot/mb6-space/uvlarm-T800/install/T-800/share/T-800/hook/cmake_prefix_path.dsv'
+[2.345s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bot/mb6-space/uvlarm-T800/install/T-800/share/T-800/hook/cmake_prefix_path.sh'
+[2.346s] Level 1:colcon.colcon_core.environment:checking '/home/bot/mb6-space/uvlarm-T800/install/T-800/bin'
+[2.346s] Level 1:colcon.colcon_core.environment:checking '/home/bot/mb6-space/uvlarm-T800/install/T-800/lib/pkgconfig/T-800.pc'
+[2.346s] Level 1:colcon.colcon_core.environment:checking '/home/bot/mb6-space/uvlarm-T800/install/T-800/lib/python3.10/site-packages'
+[2.346s] Level 1:colcon.colcon_core.environment:checking '/home/bot/mb6-space/uvlarm-T800/install/T-800/bin'
+[2.366s] INFO:colcon.colcon_core.shell:Creating package script '/home/bot/mb6-space/uvlarm-T800/install/T-800/share/T-800/package.ps1'
+[2.367s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/bot/mb6-space/uvlarm-T800/install/T-800/share/T-800/package.dsv'
+[2.367s] INFO:colcon.colcon_core.shell:Creating package script '/home/bot/mb6-space/uvlarm-T800/install/T-800/share/T-800/package.sh'
+[2.367s] INFO:colcon.colcon_core.shell:Creating package script '/home/bot/mb6-space/uvlarm-T800/install/T-800/share/T-800/package.bash'
+[2.368s] INFO:colcon.colcon_core.shell:Creating package script '/home/bot/mb6-space/uvlarm-T800/install/T-800/share/T-800/package.zsh'
+[2.368s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/bot/mb6-space/uvlarm-T800/install/T-800/share/colcon-core/packages/T-800)
+[2.389s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(grp_T800)
+[2.410s] Level 1:colcon.colcon_core.environment:checking '/home/bot/mb6-space/uvlarm-T800/install/grp_T800' for CMake module files
+[2.410s] Level 1:colcon.colcon_core.environment:checking '/home/bot/mb6-space/uvlarm-T800/install/grp_T800' for CMake config files
+[2.410s] Level 1:colcon.colcon_core.shell:create_environment_hook('grp_T800', 'cmake_prefix_path')
+[2.430s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bot/mb6-space/uvlarm-T800/install/grp_T800/share/grp_T800/hook/cmake_prefix_path.ps1'
+[2.431s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bot/mb6-space/uvlarm-T800/install/grp_T800/share/grp_T800/hook/cmake_prefix_path.dsv'
+[2.431s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bot/mb6-space/uvlarm-T800/install/grp_T800/share/grp_T800/hook/cmake_prefix_path.sh'
+[2.432s] Level 1:colcon.colcon_core.environment:checking '/home/bot/mb6-space/uvlarm-T800/install/grp_T800/lib'
+[2.432s] Level 1:colcon.colcon_core.environment:checking '/home/bot/mb6-space/uvlarm-T800/install/grp_T800/bin'
+[2.432s] Level 1:colcon.colcon_core.environment:checking '/home/bot/mb6-space/uvlarm-T800/install/grp_T800/lib/pkgconfig/grp_T800.pc'
+[2.433s] Level 1:colcon.colcon_core.environment:checking '/home/bot/mb6-space/uvlarm-T800/install/grp_T800/lib/python3.10/site-packages'
+[2.433s] Level 1:colcon.colcon_core.environment:checking '/home/bot/mb6-space/uvlarm-T800/install/grp_T800/bin'
+[2.453s] INFO:colcon.colcon_core.shell:Creating package script '/home/bot/mb6-space/uvlarm-T800/install/grp_T800/share/grp_T800/package.ps1'
+[2.453s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/bot/mb6-space/uvlarm-T800/install/grp_T800/share/grp_T800/package.dsv'
+[2.453s] INFO:colcon.colcon_core.shell:Creating package script '/home/bot/mb6-space/uvlarm-T800/install/grp_T800/share/grp_T800/package.sh'
+[2.454s] INFO:colcon.colcon_core.shell:Creating package script '/home/bot/mb6-space/uvlarm-T800/install/grp_T800/share/grp_T800/package.bash'
+[2.454s] INFO:colcon.colcon_core.shell:Creating package script '/home/bot/mb6-space/uvlarm-T800/install/grp_T800/share/grp_T800/package.zsh'
+[2.455s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/bot/mb6-space/uvlarm-T800/install/grp_T800/share/colcon-core/packages/grp_T800)
+[2.477s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tuto_kickoff)
+[2.498s] Level 1:colcon.colcon_core.environment:checking '/home/bot/mb6-space/uvlarm-T800/install/tuto_kickoff' for CMake module files
+[2.498s] Level 1:colcon.colcon_core.environment:checking '/home/bot/mb6-space/uvlarm-T800/install/tuto_kickoff' for CMake config files
+[2.499s] Level 1:colcon.colcon_core.shell:create_environment_hook('tuto_kickoff', 'cmake_prefix_path')
+[2.522s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bot/mb6-space/uvlarm-T800/install/tuto_kickoff/share/tuto_kickoff/hook/cmake_prefix_path.ps1'
+[2.522s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bot/mb6-space/uvlarm-T800/install/tuto_kickoff/share/tuto_kickoff/hook/cmake_prefix_path.dsv'
+[2.523s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bot/mb6-space/uvlarm-T800/install/tuto_kickoff/share/tuto_kickoff/hook/cmake_prefix_path.sh'
+[2.523s] Level 1:colcon.colcon_core.environment:checking '/home/bot/mb6-space/uvlarm-T800/install/tuto_kickoff/lib'
+[2.523s] Level 1:colcon.colcon_core.environment:checking '/home/bot/mb6-space/uvlarm-T800/install/tuto_kickoff/bin'
+[2.523s] Level 1:colcon.colcon_core.environment:checking '/home/bot/mb6-space/uvlarm-T800/install/tuto_kickoff/lib/pkgconfig/tuto_kickoff.pc'
+[2.524s] Level 1:colcon.colcon_core.environment:checking '/home/bot/mb6-space/uvlarm-T800/install/tuto_kickoff/lib/python3.10/site-packages'
+[2.524s] Level 1:colcon.colcon_core.environment:checking '/home/bot/mb6-space/uvlarm-T800/install/tuto_kickoff/bin'
+[2.544s] INFO:colcon.colcon_core.shell:Creating package script '/home/bot/mb6-space/uvlarm-T800/install/tuto_kickoff/share/tuto_kickoff/package.ps1'
+[2.545s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/bot/mb6-space/uvlarm-T800/install/tuto_kickoff/share/tuto_kickoff/package.dsv'
+[2.545s] INFO:colcon.colcon_core.shell:Creating package script '/home/bot/mb6-space/uvlarm-T800/install/tuto_kickoff/share/tuto_kickoff/package.sh'
+[2.546s] INFO:colcon.colcon_core.shell:Creating package script '/home/bot/mb6-space/uvlarm-T800/install/tuto_kickoff/share/tuto_kickoff/package.bash'
+[2.546s] INFO:colcon.colcon_core.shell:Creating package script '/home/bot/mb6-space/uvlarm-T800/install/tuto_kickoff/share/tuto_kickoff/package.zsh'
+[2.546s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/bot/mb6-space/uvlarm-T800/install/tuto_kickoff/share/colcon-core/packages/tuto_kickoff)
+[2.547s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[2.547s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[2.547s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[2.547s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[2.573s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[2.573s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[2.573s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[2.573s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[2.587s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[2.609s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/bot/mb6-space/uvlarm-T800/install/local_setup.ps1'
+[2.609s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/bot/mb6-space/uvlarm-T800/install/_local_setup_util_ps1.py'
+[2.611s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/bot/mb6-space/uvlarm-T800/install/setup.ps1'
+[2.643s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/bot/mb6-space/uvlarm-T800/install/local_setup.sh'
+[2.643s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/bot/mb6-space/uvlarm-T800/install/_local_setup_util_sh.py'
+[2.644s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/bot/mb6-space/uvlarm-T800/install/setup.sh'
+[2.665s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/bot/mb6-space/uvlarm-T800/install/local_setup.bash'
+[2.665s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/bot/mb6-space/uvlarm-T800/install/setup.bash'
+[2.686s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/bot/mb6-space/uvlarm-T800/install/local_setup.zsh'
+[2.687s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/bot/mb6-space/uvlarm-T800/install/setup.zsh'

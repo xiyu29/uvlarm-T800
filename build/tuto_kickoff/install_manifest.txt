@@ -1,3 +1,5 @@
+/home/bot/mb6-space/uvlarm-T800/install/tuto_kickoff/lib/tuto_kickoff/myNode
+/home/bot/mb6-space/uvlarm-T800/install/tuto_kickoff/share/tuto_kickoff//launch/challenge-1.launch.py
 /home/bot/mb6-space/uvlarm-T800/install/tuto_kickoff/share/ament_index/resource_index/package_run_dependencies/tuto_kickoff
 /home/bot/mb6-space/uvlarm-T800/install/tuto_kickoff/share/ament_index/resource_index/parent_prefix_path/tuto_kickoff
 /home/bot/mb6-space/uvlarm-T800/install/tuto_kickoff/share/tuto_kickoff/environment/ament_prefix_path.sh

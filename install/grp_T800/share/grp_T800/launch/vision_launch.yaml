@@ -1,0 +1,5 @@
+launch:
+  - node:
+      pkg: "grp_T800"
+      exec: "vision_test.py"
+      name: "Realsense"

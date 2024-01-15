@@ -1,6 +1,0 @@
-[31mCMake Error at cmake_install.cmake:46 (file):
-  file INSTALL cannot find
-  "/home/bot/mb6-space/uvlarm-T800/tuto_kickoff/scripts/myNode": No such file
-  or directory.
-
-[0m
