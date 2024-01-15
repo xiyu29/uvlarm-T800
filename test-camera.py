@@ -116,7 +116,7 @@ class Realsense(Node):
     def __init__(self, fps= 60):
         super().__init__('realsense')
         
-        self.image_publisher = self.create_publisher(Image, "topic", 10)
+        self.image_publisher = self.create_publisher(Image, "imagePublisher", 10)
 
         # Configure depth and color streams
         self.pipeline = rs.pipeline()
