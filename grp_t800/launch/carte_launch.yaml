@@ -1,0 +1,6 @@
+launch:
+- include: 
+    file: "$(find-pkg-share tbot_node)/launch/minimal_launch.yaml"   
+- executable: 
+    cmd: gnome-terminal -e "python3 /home/bot/mb6-space/uvlarm-t800/grp_t800/scripts/scan.py"
+    cmd: gnome-terminal -e "python3 /home/bot/mb6-space/uvlarm-t800/grp_t800/scripts/movement.py"

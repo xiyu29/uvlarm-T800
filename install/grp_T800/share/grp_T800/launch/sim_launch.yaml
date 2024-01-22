@@ -1,7 +1,0 @@
-launch:
-
-- include:
-    file: "$(find-pkg-share tbot_sim)/launch/challenge-1.launch.py"
-    
-- executable:
-    cmd: gnome-terminal --tab -e "python3 /home/bot/mb6-space/uvlarm-T800/grp_T800/scripts/robot_simu.py"
