@@ -3,6 +3,10 @@ In this project, we will realise a robot which can avoid all the obstacles while
 
 In this context, the robot will be able to move and turn when there is an obstacle in front of it, meanwhile, the obstcle will not give a strong influence on its movement.
 
+To get further, the robot will be able to differency green bottles from obstacles and give out a signal when a green bottle is observed.
+
+At last, the robot will be able to draw a map of a room and notify the last bottle observed in the map.
+
 # Launch file for challenge 1
 For the simulation :
     ros2 launch grp_t800 sim_launch.yaml
