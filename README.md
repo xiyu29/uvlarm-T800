@@ -8,8 +8,7 @@ To get further, the robot will be able to differency green bottles from obstacle
 At last, the robot will be able to draw a map of a room and notify the last bottle observed in the map.
 
 # Launch file for challenge 1
-For the simulation :``
-
+For the simulation :
 ros2 launch grp_t800 sim_launch.yaml
 For the movement of the robot :
     ros2 launch grp_t800 tbot_launch.yaml
