@@ -9,9 +9,9 @@ At last, the robot will be able to draw a map of a room and notify the last bott
 
 # Launch file for challenge 1
 For the simulation :  
-`ros2 launch grp_t800 sim_launch.yaml`
+`ros2 launch grp_t800 sim_launch.yaml`  
 For the movement of the robot :  
-`ros2 launch grp_t800 tbot_launch.yaml`
+`ros2 launch grp_t800 tbot_launch.yaml`  
 For the camera :  
 `ros2 launch grp_t800 vision_launch.yaml`
 
