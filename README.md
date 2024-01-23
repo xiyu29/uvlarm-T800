@@ -25,8 +25,8 @@ This document is for the simulation of robot. It will run the robot in the condi
 **scan_echo.py**  
 This document is a mixure of **scan.py** and **movement.py**.  
 **scan.py**    
-This document is for scanning all obstacles in front of the robot. It contains a subscriber which is for its callback fonction and a publisher whih is for publishing all data of each obstacle.
-**vision_test.py** 
+This document is for scanning all obstacles in front of the robot. It contains a subscriber which is for its callback fonction and a publisher whih is for publishing all data of each obstacle.  
+**vision_test.py**   
 This document is for testing the bottle in front of the robot by its color on *HSV*. 
 
 ## Rviz document
