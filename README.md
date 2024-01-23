@@ -1,11 +1,8 @@
-# UV Larm
-In this project, we will realise a robot which can avoid all the obstacles while moving in a small area.
-
-In this context, the robot will be able to move and turn when there is an obstacle in front of it, meanwhile, the obstcle will not give a strong influence on its movement.
-
-To get further, the robot will be able to differency green bottles from obstacles and give out a signal when a green bottle is observed.
-
-At last, the robot will be able to draw a map of a room and notify the last bottle observed in the map.
+## UV Larm
+# Presentation
+In this projet, we will realise a robot which can avoid all the obstacles in front fo him and identify green bottles by its color. Based on those two basic functions, the robot would be able to trace a map for a room and mark bottle which it identifies.  
+To finish all above, the robot must be able to move, to identify bottles, to measure the distance bewtten the bottle and itself and draw a map. Besides grawing the map, all other functions will be realised by *Python* documents, which will be explained. In order to draw the map, a parameter should be changed.  
+This UV is devided in 2 challenges. In challenge 1, the robot would be able to move around, avoid the obstacles and identify green bottles. In challenge 2, based on challenge 1, the robot would be able to draw a map for the room and mark the location of a green bottle on the map, if there are many bottles, it will mark down the last postion where it identify the bottle.  
 
 # Launch file for challenge 1
 For the simulation :  
